@@ -1,6 +1,6 @@
-![](https://i.imgur.com/xG74tOh.png)
-Nomes equipe: Alisson Alves e Vinicius Assis
-# Desafio Módulo 3 - Backend
+# Restful API Transações
+
+## Contexto 
 
 Seu papel é construir uma RESTful API que permita:
 
@@ -17,26 +17,28 @@ Seu papel é construir uma RESTful API que permita:
 -   Obter extrato de transações
 -   [Extra] Filtrar transações por categoria
 
-**Importante: Lembre-se sempre que cada usuário só pode ver e manipular seus próprios dados e suas próprias transações. Não atender a este pré-requisito é uma falha de segurança gravíssima!**
+Cada usuário só pode ver e manipular seus próprios dados e suas próprias transações. 
 
-**Importante 2: Sempre que a validação de uma requisição falhar, responda com código de erro e mensagem adequada à situação, ok?**
+## Tecnologias
 
-**Importante 3: O link de acesso a esta API se encontra no final deste README. Este link é somente para testes!**
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,express,nodejs,postgres,postman" />
+  </a>
+</p>
 
-**Exemplo:**
+## Start Projeto
 
-```javascript
-// Quando é informado um id de transação que não existe:
-// HTTP Status 404
-{
-    "mensagem": "Transação não encontrada!"
-}
-```
+Preencha a checklist para fazer run backend:
+
+-   [ ] Executar `git clone` no terminal para clonar o repositório, ou clonar de outra maneira (preferência SSH).
+-   [ ] Dentro da pasta que foi clonado deve utilizar o seguinte comando `npm i` ou `npm install` para fazer o download das dependências.
+-   [ ] Após realizar o processo anterior `npm start` para inicializar o backend.
 
 ## **Banco de dados**
 
 Você precisa criar um Banco de Dados PostgreSQL chamado `dindin` contendo as seguintes tabelas e colunas:  
-**ATENÇÃO! Os nomes das tabelas e das colunas a serem criados devem seguir exatamente os nomes listados abaixo.**
+**Nomes das tabelas e das colunas a serem criados devem seguir exatamente os nomes listados abaixo.**
 
 -   usuarios
     -   id
@@ -55,7 +57,6 @@ Você precisa criar um Banco de Dados PostgreSQL chamado `dindin` contendo as se
     -   usuario_id
     -   tipo
 
-**IMPORTANTE: Deverá ser criado no projeto o(s) arquivo(s) SQL que deverá ser o script que cria as tabelas corretamente.**
 
 As categorias a seguir precisam ser previamente cadastradas para que sejam listadas no endpoint de listagem das categorias.
 
@@ -752,25 +753,3 @@ Na funcionalidade de listagem de transações do usuário logado (**GET /transac
 // HTTP Status 200 / 201 / 204
 []
 ```
-
----
-
-Link do deploy da API somente para testes: [ link](https://desafio-backend-03-dindin.pedagogico.cubos.academy/)
-
-**Este link é somente para testes (ou seja, será possível realizar requisições a esta API através deste link)**
-
----
-
-## **Aulas úteis:**
-
--   [CRUD SQL](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/f2553afa-b145-44f6-aefb-a2ab86a7b0ca)
--   [Modelagem de Dados](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/4a01da6c-699c-424e-b7fc-c659a173df13)
--   [Conexão NodeJs com PostgreSQL](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/f88649a8-b3f2-411e-af52-220414c88912)
--   [Autenticação e Criptografia](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/9304a09d-960c-4888-b121-b7e1915da406)
--   [Revisão Parte I](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/da922db0-1521-4c47-9d3d-29f644a3f491)
--   [Revisão Parte II](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/d7197ed2-f15f-4d43-9675-075a02287859)
----
-
-**LEMBRE-SE**: Feito é melhor que perfeito!!!
-
-###### tags: `back-end` `módulo 3` `nodeJS` `PostgreSQL` `API REST` `desafio`
